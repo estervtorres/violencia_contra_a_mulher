@@ -457,8 +457,7 @@ button {
   height: auto; /* mantém proporção */
   
 }
-.imagem-estati
-stica {
+.imagem-estatistica {
     text-align: center;
     margin-top: 20px;
 }
@@ -570,8 +569,35 @@ html {
     background: linear-gradient(135deg, #240046, #5a189a);
 }
 
+
+/* CENTRALIZAR ESTATÍSTICAS NO COMPUTADOR */
+@media (min-width: 769px) {
+    #estatisticas .estatisticas-conteudo {
+        width: 100%;
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 25px 35px;
+        text-align: left;
+    }
+
+    #estatisticas .estatisticas-conteudo p {
+        text-align: left;
+        line-height: 1.6;
+        margin-bottom: 24px;
+    }
+
+    #estatisticas .estatisticas-conteudo br {
+        display: none;
+    }
+}
+
 /* RESPONSIVIDADE PARA CELULAR */
 @media (max-width: 768px) {
+
+    .section.ordem-celular,
+    .section.reverse.ordem-celular {
+    flex-direction: column;
+}
 
     /* MENU */
     .menu {
